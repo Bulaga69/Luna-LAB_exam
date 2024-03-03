@@ -1,0 +1,241 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Madimi one", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: slideshow;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    background-color: #f7f7f7;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@keyframes slideshow {
+    0% { background-image: url('img/kaputian.jpg'); } 
+    25% { background-image: url('img/1.jpg'); } 
+    50% { background-image: url('img/2.jpg'); } 
+    75% { background-image: url('img/3.jpg'); }
+    100% { background-image: url('img/4.jpg'); } 
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+    
+}
+header h1 {
+    color: #fff;
+    text-align: center;
+}
+header nav ul {
+    text-align: center;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease; 
+}
+
+header nav ul li a:hover {
+    color: #ffd700; 
+}
+
+
+
+    
+
+
+header h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #8a8787;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #45a4e4;
+}
+
+nav ul li a:active {
+    color: #ff4500; 
+}
+
+
+.hero h2, .hero p, .hero h3 {
+    color: #fff;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+
+.hero h2, .hero p {
+    z-index: 1;
+    position: relative;
+}
+/* Hero section styles */
+.hero {
+    background-image: url('img/.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 250px 20px;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Card styles */
+.card {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    display: flex; 
+    
+}
+.content {
+    width: 70%;
+}
+.images {
+    width: 30%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card ul {
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+.about-section {
+    color: #333; 
+}
+
+/* Footer styles */
+footer {
+    background-color: #5f8adb;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00447c; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+    margin-top: 30px; 
+}
+
+.btn:hover {
+    background-color: #ff9900; 
+}
